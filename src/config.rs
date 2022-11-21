@@ -81,7 +81,7 @@ impl Config {
                     if path.extension().map_or(false, |v| v == "tsv" || v == "tab") {
                         b'\t'
                     } else {
-                        b','
+                        b';'
                     };
                 (Some(path), delim)
             }
