@@ -73,8 +73,8 @@ pub struct Config {
 impl Config {
     pub fn new(path: &Option<String>) -> Config {
         let (path, delim) = match *path {
-            None => (None, b','),
-            Some(ref s) if s.deref() == "-" => (None, b','),
+            None => (None, b';'),
+            Some(ref s) if s.deref() == "-" => (None, b';'),
             Some(ref s) => {
                 let path = PathBuf::from(s);
                 let delim =
