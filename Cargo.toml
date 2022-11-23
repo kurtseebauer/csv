@@ -12,7 +12,7 @@ license = "Unlicense/MIT"
 autotests = false
 
 [[bin]]
-name = "xsv"
+name = "csv"
 test = false
 bench = false
 doctest = false
